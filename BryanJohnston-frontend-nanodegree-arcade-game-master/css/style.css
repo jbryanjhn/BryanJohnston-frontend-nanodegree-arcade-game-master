@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+h1 {
+  color: #ffe900;
+  font-family: 'Papyrus', cursive;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hide {
+  display: none;
+}
