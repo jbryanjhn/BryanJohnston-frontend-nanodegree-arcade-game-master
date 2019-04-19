@@ -11,3 +11,9 @@ h1 {
 .hide {
   display: none;
 }
+
+canvas {
+	position: relative;
+	z-index: 10;
+	margin-top: -2rem;
+}

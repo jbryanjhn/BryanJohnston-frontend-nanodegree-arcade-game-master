@@ -1,4 +1,20 @@
-const startBtn = document.querySelector('.btn-start-game');
+//const startBtn = document.querySelector('.btn-start-game');
+const splashScreen = document.querySelector('.splash_screen');
+const canvas = document.querySelector('.canvas__board');
+
+const btn = document.querySelector('.btn');
+
+
+const Game = function() {
+
+};
+
+const game = new Game();
+
+Game.prototype.start = function() {
+    canvas.classList.remove('hide');
+    splashScreen.classList.add('hide');
+};
 
 let allEnemies = [];
 
@@ -101,6 +117,11 @@ enemyPos.forEach(function(posY) {
     allEnemies.push(enemy);
 });
 
+function startGame() {
+  btn.addEventListener('click', Game.prototype.start);
+}
+
+startGame();
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
